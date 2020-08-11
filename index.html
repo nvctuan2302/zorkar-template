@@ -1,0 +1,1826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Zorka</title>
+  <link rel="stylesheet" href="css/application.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+
+<body>
+
+  <header id="js-header">
+  <div class="site-top container">
+
+    <div class="site-top__login">
+      Welcome Guest!
+      <a href="/">Log In</a> Or
+      <a href="/">Register</a>
+    </div>
+    <div class="site-top__setting">
+      My Settings
+
+      <ul class="site-top-list">
+        <li class="site-top-list__item">
+          <a class="site-top-list__link" href="/">
+            <i class="fa fa-user"></i> My Acount
+          </a>
+        </li>
+        <li class="site-top-list__item">
+          <a class="site-top-list__link" href="/">
+            <i class="fa fa-heart"></i> WISH LIST
+          </a>
+        </li>
+        <li class="site-top-list__item">
+          <a class="site-top-list__link" href="/">
+            <i class="fa fa-shopping-cart"></i> SHOPPING CART
+          </a>
+        </li>
+        <li class="site-top-list__item">
+          <a class="site-top-list__link" href="/">
+            <i class="fa fa-share"></i> CHECKOUT
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="header__sub-navbar">
+      <div class="container">
+        <div class="wrap-navbar">
+          <a class="brand brand--md" style="background-image: url(images/logo.png);">
+          </a>
+
+          <div class="wrap-navbar__expand">
+            <ul class="contact-list">
+              <li class="contact-list__item">(+100) 6666 8888</li>
+              <li class="contact-list__item">info@domain.com</li>
+              <li class="contact-list__item">99 Collins Street, London, UK.</li>
+            </ul>
+            <input type="text" class="search-input" placeholder="Let's Search">
+            <div class="categories">
+              <div class="categories__chosen js-categories__chosen">
+                <span class="categories__result js-categories__result">
+                  All Category
+                </span>
+              </div>
+              <ul class="categories-list js-categories-list">
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">All Category</span>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Boys</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Clothings</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Shoes</span></li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Clothing</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Hoodies</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Jean Men</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">T-shirts</span></li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Fashion</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Autumn Collection</span>
+                    </li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Collections</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Singles</span></li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Fashion</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Autumn Collection</span>
+                    </li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Collections</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Singles</span></li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Fashion Waist Packs</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Laptop bags</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Shoes</span></li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Kids</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Clothings</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Hat</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Shoes</span></li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">LUGGAGE &amp; TRAVEL
+                    GEAR</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">BackPacks</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Briefcase</span></li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Men</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Accessories</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Boat Shoes</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Brand Watch</span></li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Posters</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Hanbags &amp;
+                        Wallets</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Jewelry Diamond</span>
+                    </li>
+                  </ul>
+                </li>
+                <li class="categories-list__item">
+                  <span class=" categories-list__value js-categories-list__value u-pl-10">Women</span>
+                  <ul>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Jewelry</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Shoes</span></li>
+                    <li><span class=" categories-list__value js-categories-list__value u-pl-30">Watches</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <button class="button button--search button--right u-color-grey"> </button>
+          </div>
+          <div class="cart-shoping">
+            <div class="cart-shoping__quantity js-cart-shoping__quantity badge badge--circle badge--primary is-sm ">0
+            </div>
+            <div class="cart-content">
+              <div class="u-pt-45 u-pbt-45 u-text-center js-cart-emtpty">
+                <p class="u-pbt-15 u-fontsize-16">AN EMPTY CART</p>
+                <p class="u-pbt-15">You have no item in your shopping cart</p>
+              </div>
+              <div class="u-hiden js-cart-content">
+                <div class="cart-list js-cart-list">
+
+                </div>
+                <div class="cart-content__total js-cart-content__total">
+                  SUBTOTAL: £75.00
+                </div>
+                <div class="cart-content__action">
+                  <button class="button button--round button--white">VIEW CART</button>
+                  <button class="button button--round button--white u-ml-10">CHECK OUT</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="header__main-navbar js-header__main-navbar">
+        <ul class="menu-list">
+          <a href="/" class="brand brand--sm brand--hiden js-brand u-mr-48"
+            style="background-image: url(images/logo.png);">
+          </a>
+          <li class="menu-list__item is-active">
+            <a href="/" class="menu-list__link">home</a>
+          </li>
+          <li class="menu-list__item">
+            <a href="/" class="menu-list__link">pages</a>
+            <div class="dropdown-standard">
+              <ul class="dropdown-list">
+                <li class="dropdown-list__item has-sub">
+                  <a href="/" class="dropdown-list__link has-sub">Portfolio</a>
+                  <ul class="dropdown-list-lv2">
+                    <li class="dropdown-list-lv2__item">
+                      <a href="/" class="dropdown-list-lv2__link">Contact Us 1</a>
+                    </li>
+                    <li class="dropdown-list-lv2__item">
+                      <a href="/" class="dropdown-list-lv2__link">Contact Us 2</a>
+                    </li>
+                    <li class="dropdown-list-lv2__item">
+                      <a href="/" class="dropdown-list-lv2__link">Contact Us 3</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="/" class="dropdown-list__link">Contact Us 1</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="/" class="dropdown-list__link">Contact Us 2</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="/" class="dropdown-list__link">Contact Us 3</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="/" class="dropdown-list__link">Our congtuan</a>
+                </li>
+                <li class="dropdown-list__item">
+                  <a href="/" class="dropdown-list__link">Our Services</a>
+                </li>
+                <li class="dropdown-list__item has-sub">
+                  <a href="/" class="dropdown-list__link">404 pages</a>
+                  <ul class="dropdown-list-lv2">
+                    <li class="dropdown-list__item">
+                      <a href="/" class="dropdown-list__link">Our congtuan</a>
+                    </li>
+                    <li class="dropdown-list__item">
+                      <a href="/" class="dropdown-list__link">Our Services</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="menu-list__item">
+            <a href="/" class="menu-list__link">shop</a>
+            <div class="dropdown-multi-column">
+              <div class="dropdown-shop-tab">
+                <ul class="shop-list js-shop-list">
+                  <li class="shop-list__item  js-shop-list__item is-active">
+                    <a href="/" class="shop-list__link">main shop</a>
+                    <p class="shop-list__description">This is tab contain links your account and display styles for
+                      product.
+                    </p>
+                    <div class="wrap-content is-active js-wrap-content"
+                      style="background-image: url(images/menu-bg-03.png);">
+                      <ul class=" content-list">
+                        <li class="content-list__item">
+                          <a href="" class="content-list__link-image"
+                            style="background-image: url(images/product-21.jpg);">
+                          </a>
+                          <a href="#" class="content-list__title-image"> Farlap Shirt – Ruby Wines</a>
+                        </li>
+                        <li class="content-list__item ">
+                          <a href="" class="content-list__link">layouts</a>
+                          <ul class="content-list-sub">
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Shop Full Content</a>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Left Sidebar</a>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Right Sidebar</a>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Shop Category</a>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Single Product</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="content-list__item ">
+                          <a href="" class="content-list__link">Your Account</a>
+                          <ul class="content-list-sub">
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Wishlist</a>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">View Cart</a>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Order Tracking</a>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Checkout</a>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">My Account</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="shop-list__item  js-shop-list__item">
+                    <a href="/" class="shop-list__link">clothing</a>
+                    <p class="shop-list__description">
+                      TIntroduce many styles for men and women.
+                    </p>
+                    <div class="wrap-content js-wrap-content">
+                      <ul class=" content-list">
+                        <li class="content-list__item">
+                          <a href="" class="content-list__link-image"
+                            style="background-image: url(images/product-20.jpg);">
+                          </a>
+                          <a href="#" class="content-list__title-image">Mollicitudin Lobortis</a>
+                        </li>
+                        <li class="content-list__item">
+                          <a href="" class="content-list__link-image"
+                            style="background-image: url(images/product-17.jpg);">
+                          </a>
+                          <a href="#" class="content-list__title-image">Striped Sweater</a>
+                        </li>
+                        <li class="content-list__item">
+                          <a href="" class="content-list__link-image"
+                            style="background-image: url(images/product-13.jpg);">
+                          </a>
+                          <a href="#" class="content-list__title-image">Black Coach Women</a>
+                        </li>
+                        <li class="content-list__item">
+                          <a href="" class="content-list__link-image"
+                            style="background-image: url(images/product-14.jpg);">
+                          </a>
+                          <a href="#" class="content-list__title-image">Veston Office</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="shop-list__item  js-shop-list__item">
+                    <a href="/" class="shop-list__link">fashion</a>
+                    <p class="shop-list__description">Fashion very important in life. So everybody should focus it.
+                    </p>
+                    <div class="wrap-content js-wrap-content">
+                      <ul class=" content-list">
+                        <li class="content-list__item">
+                          <a href="/" class="content-list__link">Best Sellers</a>
+                          <ul class="content-list-sub">
+                            <li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Striped Sweater</a>
+                              <p class="content-list-sub__description">£35 – Striped Sweater For Men</p>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">T-Shirt For Men</a>
+                              <p class="content-list-sub__description">£9 – Fashion Autumn</p>
+                            </li>
+                            <li class="content-list-sub__iem">
+                              <a href="/" class="content-list-sub__link">Utility Jacket</a>
+                              <p class="content-list-sub__description">£18 – Pretty fashionista</p>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Houndstooth Wool Coat
+                                <div class="badge badge--arrow badge--blue">NEW</div>
+                              </a>
+                              <p class="content-list-sub__description">£30.00–£35.00, style for men</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="content-list__item">
+                          <a href="" class="content-list__link">Features & Latest</a>
+                          <ul class="content-list-sub">
+                            <li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Veston For Business</a>
+                              <p class="content-list-sub__description">Unlimited style to choose</p>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Veston Office</a>
+                              <p class="content-list-sub__description">Black & White</p>
+                            </li>
+                            <li class="content-list-sub__iem">
+                              <a href="/" class="content-list-sub__link">Women’s Skirts
+                                <div class="badge badge--arrow badge--red">HOT</div>
+                              </a>
+                              <p class="content-list-sub__description">Dress for teen</p>
+                            </li>
+                            <li class="content-list-sub__item">
+                              <a href="/" class="content-list-sub__link">Framed-Sleeve Topss</a>
+                              <p class="content-list-sub__description">Coach women winter</p>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="content-list__item">
+                          <a href="" class="content-list__link-image"
+                            style="background-image: url(images/product-23.jpg);">
+                          </a>
+                          <a href="#" class="content-list__title-image">Veston For Business</a>
+                        </li>
+                        <li class="content-list__item">
+                          <a href="" class="content-list__link-image"
+                            style="background-image: url(images/product-07.jpg);">
+                          </a>
+                          <a href="#" class="content-list__title-image">Black White Grid Skirt</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="menu-list__item">
+            <a href="/" class="menu-list__link">product</a>
+          </li>
+
+          <li class="menu-list__item">
+            <a href="/" class="menu-list__link">categories</a>
+          </li>
+
+          <li class="menu-list__item">
+            <a href="/" class="menu-list__link">shortcodes</a>
+          </li>
+
+          <li class="menu-list__item ">
+            <a href="/" class="menu-list__link">blog</a>
+
+          </li>
+        </ul>
+
+        <ul class="social-list">
+          <li class="social-list__item" data-tooltip="Email">
+            <a href="/" class="social-list__link"></a>
+          </li>
+          <li class="social-list__item" data-tooltip="Linked In">
+            <a href="/" class="social-list__link"></a>
+          </li>
+          <li class="social-list__item" data-tooltip="Facebook">
+            <a href="/" class="social-list__link"></a>
+          </li>
+          <li class="social-list__item" data-tooltip="Twitter">
+            <a href="/" class="social-list__link"></a>
+          </li>
+          <li class="social-list__item" data-tooltip="Dribbble">
+            <a href="/" class="social-list__link"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__main-navbar-mobie">
+        <div class="menu-toggle">
+          <button class="button button--hamburger js-button--hamburger ">
+            <div class="line"></div>
+            <p class="u-ml-30 u-color-white">MENU</p>
+          </button>
+          <button class="button button--search js-button--search-mb u-color-white"> </button>
+        </div>
+        <ul class="menu-mobie-list js-menu-mobie-list">
+          <li class="menu-mobie-list__item has-sub js-menu-mobie-list__item">
+            <a href="" class="menu-mobie-list__link">
+              Home
+            </a>
+            <ul class="menu-mobie-list-lv2 js-menu-mobie-list-lv2">
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 1
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 2
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 3
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 4
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 5
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 6
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 7
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 8
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 9
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 10
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 11
+                </a>
+              </li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item">
+                <a href="https://www.google.com/" class="menu-mobie-list-lv2__link">
+                  Home 12
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="menu-mobie-list__item has-sub js-menu-mobie-list__item">
+            <a href="" class="menu-mobie-list__link">
+              Pages
+            </a>
+            <ul class="menu-mobie-list-lv2 js-menu-mobie-list-lv2">
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Pages 1</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Pages 2</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Pages 3</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Pages 4</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Pages 5</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Pages 6</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Pages 7</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Pages 8</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Home 9</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Home 10</a></li>
+            </ul>
+          </li>
+          <li class="menu-mobie-list__item has-sub js-menu-mobie-list__item">
+            <a href="" class="menu-mobie-list__link">Shop</a>
+            <ul class="menu-mobie-list-lv2 js-menu-mobie-list-lv2">
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Shortcodes 1</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Shortcodes 2</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Shortcodes 3</a></li>
+            </ul>
+          </li>
+          <li class="menu-mobie-list__item js-menu-mobie-list__item">
+            <a href="#" class="menu-mobie-list__link">Product</a>
+          </li>
+          <li class="menu-mobie-list__item js-menu-mobie-list__item">
+            <a href="" class="menu-mobie-list__link">Categories</a>
+          </li>
+          <li class="menu-mobie-list__item js-menu-mobie-list__item">
+            <a href="" class="menu-mobie-list__link">Shortcodes</a>
+          </li>
+          <li class="menu-mobie-list__item has-sub js-menu-mobie-list__item">
+            <a href="" class="menu-mobie-list__link">Bolg</a>
+            <ul class="menu-mobie-list-lv2 js-menu-mobie-list-lv2">
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Bolg 1</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Bolg 2</a></li>
+              <li class="menu-mobie-list-lv2__item js-menu-mobie-list-lv2__item"><a href=""
+                  class="menu-mobie-list-lv2__link">Bolg 3</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal-search js-modal-search">
+    <div class="u-pos-relative">
+      <input type="text" class="modal-search__input" placeholder="Search">
+      <button class="modal-search__location-search button button--search u-color-white"> </button>
+      <button
+        class="modal-search__location-close js-modal-search__btn-close button button--close u-color-white"></button>
+    </div>
+  </div>
+</header>
+
+  
+<section class="main">
+  <section class="section--sm">
+    <div class="container-full">
+      <div class="carousel">
+        <div class="img-list js-img-list">
+          <div class="img-list__item" style="background-image: url(images/slider-03-1.jpg);"></div>
+          <div class="img-list__item" style="background-image: url(images/slider-03-2.jpg);"></div>
+          <div class="img-list__item" style="background-image: url(images/slider-03-3.jpg);"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section--lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-xs-12">
+          <div class="box box--primary box--red">
+            <span class="box__title">
+              FREE SHIPPING WORLDWIDE
+            </span>
+            <div class="box__icon">
+              <i class="fas fa-shopping-cart"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-xs-12">
+          <div class="box box--primary box--brown">
+            <span class="box__title">
+              GIVEAWAY EVERYWEEK
+            </span>
+            <div class="box__icon">
+              <i class="fas fa-gift"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-xs-12">
+          <div class="box box--primary box--grey">
+            <span class="box__title">
+              SALE UP TO 70% OFF ON TUESDAY
+            </span>
+            <div class="box__icon">
+              <i class="fas fa-gem"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section--lg">
+    <div class="container">
+      <div class="headline--main headline--md headline--dark u-text-center">TRENDY CLOTHING</div>
+      <div class="headline--sub headline--xs headline--grey u-text-center">Trending</div>
+      <ul class="tab">
+        <li class="tab__item js-tab__item is-active" data-tab-id="featured">Featured</li>
+        <li class="tab__item js-tab__item" data-tab-id="clothing">Clothing</li>
+        <li class="tab__item js-tab__item" data-tab-id="t-shirts">T-shirts</li>
+      </ul>
+      <div class="tab-content js-tab-content is-active" id="featured">
+        <div class="row ">
+          <div class=" col-3 col-xs-6 col-xxs-12">
+            <div class="card card--vertical" data-id="001" data-product="Veston For Busin1ess"
+              data-img="images/product-23.jpg">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front js-img" style="background-image: url(images/product-23.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-14.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Laptop bags ND1</a>
+                <a href="#" class="card-body__title js-product-name">Veston For Busin1ess</a>
+                <div class="card-body__price">
+                  <del>80.00</del>
+                  <span class="u-color-primary js-price">70.00</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey js-btn-add">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-3  col-xs-6 col-xxs-12">
+            <div class="card card--vertical" data-id="002">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front js-img" style="background-image: url(images/product-15.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-19.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Hanbags & Wallets</a>
+                <a href="#" class="card-body__title js-product-name">Ligula Ullamcorper Coach</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-2sale" name="sale" value="5" />
+                  <label class="card-rating__star" for="star5-2sale"></label>
+                  <input checked class="card-rating__item" type="radio" id="star4-2sale" name="sale" value="4" />
+                  <label class="card-rating__star" for="star4-2sale"></label>
+                  <input class="card-rating__item" type="radio" id="star3-2sale" name="sale" value="3" />
+                  <label class="card-rating__star" for="star3-2sale"></label>
+                  <input class="card-rating__item" type="radio" id="star2-2sale" name="sale" value="2" />
+                  <label class="card-rating__star" for="star2-2sale"></label>
+                  <input class="card-rating__item" type="radio" id="star1-2sale" name="sale" value="1" />
+                  <label class="card-rating__star" for="star1-2sale"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>40.00</del>
+                  <span class="u-color-primary js-price js-price ">20.00</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey js-btn-add">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-3  col-xs-6 col-xxs-12">
+            <div class="card card--vertical" data-id="003">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front js-img" style="background-image: url(images/product-22.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-17.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Briefcase</a>
+                <a href="#" class="card-body__title js-product-name">Sapien Euismod</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-4sale" name="rating4sale" value="5" />
+                  <label class="card-rating__star" for="star5-1sale"></label>
+                  <input class="card-rating__item" type="radio" id="star4-4sale" name="rating4sale" value="4" />
+                  <label class="card-rating__star" for="star4-1sale"></label>
+                  <input class="card-rating__item" type="radio" id="star3-4sale" name="rating4sale" value="3" />
+                  <label class="card-rating__star" for="star3-4sale"></label>
+                  <input checked class="card-rating__item" type="radio" id="star2-4" name="rating4sale" value="2" />
+                  <label class="card-rating__star" for="star2-4sale"></label>
+                  <input class="card-rating__item" type="radio" id="star1-4sale" name="rating4sale" value="1" />
+                  <label class="card-rating__star" for="star1-4sale"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>40.00</del>
+                  <span class="u-color-primary js-price">40.00</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey js-btn-add">
+                      ADD TO CART
+                    </button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3 col-xs-6 col-xxs-12">
+            <div class="card card--vertical" data-id="004">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front js-img" style="background-image: url(images/product-13.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-07.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories"> Hanbags & Wallets</a>
+                <a href="#" class="card-body__title js-product-name">Veston For Busin1ess</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-3sale" name="rating3sale" value="5" />
+                  <label class="card-rating__star" for="star5-3sale"></label>
+                  <input class="card-rating__item" type="radio" id="star4-3sale" name="rating3sale" value="4" />
+                  <label class="card-rating__star" for="star4-3sale"></label>
+                  <input checked class="card-rating__item" type="radio" id="star3-3sale" name="rating3sale" value="3" />
+                  <label class="card-rating__star" for="star3-3sale"></label>
+                  <input class="card-rating__item" type="radio" id="star2-3sale" name="rating3sale" value="2" />
+                  <label class="card-rating__star" for="star2-3sale"></label>
+                  <input class="card-rating__item" type="radio" id="star1-3sale" name="rating3" sale value="1" />
+                  <label class="card-rating__star" for="star1-3sale"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>40.00</del>
+                  <span class="u-color-primary js-price">50.00</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey js-btn-add">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-content js-tab-content" id="clothing">
+        <div class="row">
+          <div class=" col-3 col-sm-6 col-xs-12">
+            <div class="card card--vertical">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front" style="background-image: url(images/product-23.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-14.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Laptop bags ND2</a>
+                <a href="#" class="card-body__title js-product-name">Veston For Busin1ess</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-1" name="rating1" value="5" />
+                  <label class="card-rating__star" for="star5-1"></label>
+                  <input class="card-rating__item" type="radio" id="star4-1" name="rating1" value="4" />
+                  <label class="card-rating__star" for="star4-1"></label>
+                  <input checked class="card-rating__item" type="radio" id="star3-1" name="rating1" value="3" />
+                  <label class="card-rating__star" for="star3-1"></label>
+                  <input class="card-rating__item" type="radio" id="star2-1" name="rating1" value="2" />
+                  <label class="card-rating__star" for="star2-1"></label>
+                  <input class="card-rating__item" type="radio" id="star1-1" name="rating1" value="1" />
+                  <label class="card-rating__star" for="star1-1"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>8500</del>
+                  <span class="u-color-primary">7600</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-3 col-sm-6 col-xs-12">
+            <div class="card card--vertical">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front" style="background-image: url(images/product-15.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-19.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Hanbags & Wallets</a>
+                <a href="#" class="card-body__title">Ligula Ullamcorper Coach</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-2" name="rating2" value="5" />
+                  <label class="card-rating__star" for="star5-2"></label>
+                  <input checked class="card-rating__item" type="radio" id="star4-2" name="rating2" value="4" />
+                  <label class="card-rating__star" for="star4-2"></label>
+                  <input class="card-rating__item" type="radio" id="star3-2" name="rating2" value="3" />
+                  <label class="card-rating__star" for="star3-2"></label>
+                  <input class="card-rating__item" type="radio" id="star2-2" name="rating2" value="2" />
+                  <label class="card-rating__star" for="star2-2"></label>
+                  <input class="card-rating__item" type="radio" id="star1-2" name="rating2" value="1" />
+                  <label class="card-rating__star" for="star1-2"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>2000</del>
+                  <span class="u-color-primary">850</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-3 col-sm-6 col-xs-12">
+            <div class="card card--vertical">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front" style="background-image: url(images/product-22.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-17.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Briefcase</a>
+                <a href="#" class="card-body__title">Sapien Euismod</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-4" name="rating4" value="5" />
+                  <label class="card-rating__star" for="star5-1"></label>
+                  <input class="card-rating__item" type="radio" id="star4-4" name="rating4" value="4" />
+                  <label class="card-rating__star" for="star4-1"></label>
+                  <input class="card-rating__item" type="radio" id="star3-4" name="rating4" value="3" />
+                  <label class="card-rating__star" for="star3-4"></label>
+                  <input checked class="card-rating__item" type="radio" id="star2-4" name="rating4" value="2" />
+                  <label class="card-rating__star" for="star2-4"></label>
+                  <input class="card-rating__item" type="radio" id="star1-4" name="rating4" value="1" />
+                  <label class="card-rating__star" for="star1-4"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>4000</del>
+                  <span class="u-color-primary">2000</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-3 col-sm-6 col-xs-12">
+            <div class="card card--vertical">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front" style="background-image: url(images/product-13.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-07.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories"> Hanbags & Wallets</a>
+                <a href="#" class="card-body__title">Veston For Busin1ess</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-3" name="rating3" value="5" />
+                  <label class="card-rating__star" for="star5-3"></label>
+                  <input class="card-rating__item" type="radio" id="star4-3" name="rating3" value="4" />
+                  <label class="card-rating__star" for="star4-3"></label>
+                  <input checked class="card-rating__item" type="radio" id="star3-3" name="rating3" value="3" />
+                  <label class="card-rating__star" for="star3-3"></label>
+                  <input class="card-rating__item" type="radio" id="star2-3" name="rating3" value="2" />
+                  <label class="card-rating__star" for="star2-3"></label>
+                  <input class="card-rating__item" type="radio" id="star1-3" name="rating3" value="1" />
+                  <label class="card-rating__star" for="star1-3"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>8000</del>
+                  <span class="u-color-primary">2000</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="tab-content js-tab-content" id="t-shirts">
+        <div class="row">
+          <div class=" col-3 col-sm-6 col-xs-12">
+            <div class="card card--vertical">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front" style="background-image: url(images/product-23.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-14.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Laptop bags</a>
+                <a href="#" class="card-body__title">Veston For Busin1ess</a>
+                <div class="card-body__price">
+                  <del>80.00</del>
+                  <span class="u-color-primary">70.00</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-3 col-sm-6 col-xs-12">
+            <div class="card card--vertical">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front" style="background-image: url(images/product-15.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-19.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Hanbags & Wallets</a>
+                <a href="#" class="card-body__title">Ligula Ullamcorper Coach</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-2" name="rating2" value="5" />
+                  <label class="card-rating__star" for="star5-2"></label>
+                  <input checked class="card-rating__item" type="radio" id="star4-2" name="rating2" value="4" />
+                  <label class="card-rating__star" for="star4-2"></label>
+                  <input class="card-rating__item" type="radio" id="star3-2" name="rating2" value="3" />
+                  <label class="card-rating__star" for="star3-2"></label>
+                  <input class="card-rating__item" type="radio" id="star2-2" name="rating2" value="2" />
+                  <label class="card-rating__star" for="star2-2"></label>
+                  <input class="card-rating__item" type="radio" id="star1-2" name="rating2" value="1" />
+                  <label class="card-rating__star" for="star1-2"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>40.00</del>
+                  <span class="u-color-primary">20.00</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-3 col-sm-6 col-xs-12">
+            <div class="card card--vertical">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front" style="background-image: url(images/product-22.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-17.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories">Briefcase</a>
+                <a href="#" class="card-body__title">Sapien Euismod</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-4" name="rating4" value="5" />
+                  <label class="card-rating__star" for="star5-1"></label>
+                  <input class="card-rating__item" type="radio" id="star4-4" name="rating4" value="4" />
+                  <label class="card-rating__star" for="star4-1"></label>
+                  <input class="card-rating__item" type="radio" id="star3-4" name="rating4" value="3" />
+                  <label class="card-rating__star" for="star3-4"></label>
+                  <input checked class="card-rating__item" type="radio" id="star2-4" name="rating4" value="2" />
+                  <label class="card-rating__star" for="star2-4"></label>
+                  <input class="card-rating__item" type="radio" id="star1-4" name="rating4" value="1" />
+                  <label class="card-rating__star" for="star1-4"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>40.00</del>
+                  <span class="u-color-primary">20.00</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" col-3 col-sm-6 col-xs-12">
+            <div class="card card--vertical">
+              <div class="card-img">
+                <div class="card-img__inner is-topleft">
+                  <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+                </div>
+                <div class="card-img__inner is-center" data-tooltip="Quick View">
+                  <button class="button button--circle button--search button--primary"></button>
+                </div>
+                <a href="#" class="card-img__img-front" style="background-image: url(images/product-13.jpg);">
+                </a>
+                <a href="#" class="card-img__img-back" style="background-image: url(images/product-07.jpg);">
+                </a>
+              </div>
+              <div class="card-body">
+                <a href="#" class="card-body__categories"> Hanbags & Wallets</a>
+                <a href="#" class="card-body__title">Veston For Busin1ess</a>
+                <div class="card-rating">
+                  <input class="card-rating__item" type="radio" id="star5-3" name="rating3" value="5" />
+                  <label class="card-rating__star" for="star5-3"></label>
+                  <input class="card-rating__item" type="radio" id="star4-3" name="rating3" value="4" />
+                  <label class="card-rating__star" for="star4-3"></label>
+                  <input checked class="card-rating__item" type="radio" id="star3-3" name="rating3" value="3" />
+                  <label class="card-rating__star" for="star3-3"></label>
+                  <input class="card-rating__item" type="radio" id="star2-3" name="rating3" value="2" />
+                  <label class="card-rating__star" for="star2-3"></label>
+                  <input class="card-rating__item" type="radio" id="star1-3" name="rating3" value="1" />
+                  <label class="card-rating__star" for="star1-3"></label>
+                </div>
+                <div class="card-body__price">
+                  <del>40.00</del>
+                  <span class="u-color-primary">20.00</span>
+                </div>
+                <div class="card-action">
+                  <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                    <button class="button button--circle button--heart button--grey"></button>
+                  </div>
+                  <div class="card-action__item">
+                    <button class="button button--round button--grey">ADD TO CARD</button>
+                  </div>
+                  <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                    <button class="button button--circle button--compare button--grey"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--lg">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-12 u-mbt-10 ">
+          <div class="u-overflow-hiden">
+            <div class="image-block zoom-in" style="background-image: url(images/banner-1.jpg);">
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-12 u-overflow-hiden">
+          <div class="u-overflow-hiden">
+            <div class="image-block zoom-in" style="background-image: url(images/banner-2.jpg);">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--xl">
+    <div class="container">
+      <div class="headline--main headline--md headline--dark u-text-center">SALE OFF</div>
+      <div class="headline--sub headline--xs headline--grey u-text-center">Up to 50%</div>
+      <div class="row u-mt-50">
+        <div class=" col-3 col-sm-6 col-xs-12">
+          <div class="card card--vertical">
+            <div class="card-img">
+              <div class="card-img__inner is-topleft">
+                <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+              </div>
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-23.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-14.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__categories">Laptop bags ND2</a>
+              <a href="#" class="card-body__title js-product-name">Veston For Busin1ess</a>
+              <div class="card-rating">
+                <input class="card-rating__item" type="radio" id="star5-1" name="rating1" value="5" />
+                <label class="card-rating__star" for="star5-1"></label>
+                <input class="card-rating__item" type="radio" id="star4-1" name="rating1" value="4" />
+                <label class="card-rating__star" for="star4-1"></label>
+                <input checked class="card-rating__item" type="radio" id="star3-1" name="rating1" value="3" />
+                <label class="card-rating__star" for="star3-1"></label>
+                <input class="card-rating__item" type="radio" id="star2-1" name="rating1" value="2" />
+                <label class="card-rating__star" for="star2-1"></label>
+                <input class="card-rating__item" type="radio" id="star1-1" name="rating1" value="1" />
+                <label class="card-rating__star" for="star1-1"></label>
+              </div>
+              <div class="card-body__price">
+                <del>8500</del>
+                <span class="u-color-primary">7600</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+                <div class="card-action__item">
+                  <button class="button button--round button--grey">ADD TO CARD</button>
+                </div>
+                <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-3 col-sm-6 col-xs-12">
+          <div class="card card--vertical">
+            <div class="card-img">
+              <div class="card-img__inner is-topleft">
+                <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+              </div>
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-15.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-19.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__categories">Hanbags & Wallets</a>
+              <a href="#" class="card-body__title">Ligula Ullamcorper Coach</a>
+              <div class="card-rating">
+                <input class="card-rating__item" type="radio" id="star5-2" name="rating2" value="5" />
+                <label class="card-rating__star" for="star5-2"></label>
+                <input checked class="card-rating__item" type="radio" id="star4-2" name="rating2" value="4" />
+                <label class="card-rating__star" for="star4-2"></label>
+                <input class="card-rating__item" type="radio" id="star3-2" name="rating2" value="3" />
+                <label class="card-rating__star" for="star3-2"></label>
+                <input class="card-rating__item" type="radio" id="star2-2" name="rating2" value="2" />
+                <label class="card-rating__star" for="star2-2"></label>
+                <input class="card-rating__item" type="radio" id="star1-2" name="rating2" value="1" />
+                <label class="card-rating__star" for="star1-2"></label>
+              </div>
+              <div class="card-body__price">
+                <del>2000</del>
+                <span class="u-color-primary">850</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+                <div class="card-action__item">
+                  <button class="button button--round button--grey">ADD TO CARD</button>
+                </div>
+                <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-3 col-sm-6 col-xs-12">
+          <div class="card card--vertical">
+            <div class="card-img">
+              <div class="card-img__inner is-topleft">
+                <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+              </div>
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-22.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-17.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__categories">Briefcase</a>
+              <a href="#" class="card-body__title">Sapien Euismod</a>
+              <div class="card-rating">
+                <input class="card-rating__item" type="radio" id="star5-4" name="rating4" value="5" />
+                <label class="card-rating__star" for="star5-1"></label>
+                <input class="card-rating__item" type="radio" id="star4-4" name="rating4" value="4" />
+                <label class="card-rating__star" for="star4-1"></label>
+                <input class="card-rating__item" type="radio" id="star3-4" name="rating4" value="3" />
+                <label class="card-rating__star" for="star3-4"></label>
+                <input checked class="card-rating__item" type="radio" id="star2-4" name="rating4" value="2" />
+                <label class="card-rating__star" for="star2-4"></label>
+                <input class="card-rating__item" type="radio" id="star1-4" name="rating4" value="1" />
+                <label class="card-rating__star" for="star1-4"></label>
+              </div>
+              <div class="card-body__price">
+                <del>4000</del>
+                <span class="u-color-primary">2000</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+                <div class="card-action__item">
+                  <button class="button button--round button--grey">ADD TO CARD</button>
+                </div>
+                <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" col-3 col-sm-6 col-xs-12">
+          <div class="card card--vertical">
+            <div class="card-img">
+              <div class="card-img__inner is-topleft">
+                <div class="badge badge--primary badge--circle badge--xl">20,4%</div>
+              </div>
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-13.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-07.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__categories"> Hanbags & Wallets</a>
+              <a href="#" class="card-body__title">Veston For Busin1ess</a>
+              <div class="card-rating">
+                <input class="card-rating__item" type="radio" id="star5-3" name="rating3" value="5" />
+                <label class="card-rating__star" for="star5-3"></label>
+                <input class="card-rating__item" type="radio" id="star4-3" name="rating3" value="4" />
+                <label class="card-rating__star" for="star4-3"></label>
+                <input checked class="card-rating__item" type="radio" id="star3-3" name="rating3" value="3" />
+                <label class="card-rating__star" for="star3-3"></label>
+                <input class="card-rating__item" type="radio" id="star2-3" name="rating3" value="2" />
+                <label class="card-rating__star" for="star2-3"></label>
+                <input class="card-rating__item" type="radio" id="star1-3" name="rating3" value="1" />
+                <label class="card-rating__star" for="star1-3"></label>
+              </div>
+              <div class="card-body__price">
+                <del>8000</del>
+                <span class="u-color-primary">2000</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item card-action__item--left" data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+                <div class="card-action__item">
+                  <button class="button button--round button--grey">ADD TO CARD</button>
+                </div>
+                <div class="card-action__item card-action__item--right" data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section-balance--md section--grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-12">
+          <div class="u-bg-white u-pl-30 u-pbt-30 u-pt-30 u-fontsize-20">NEW IN</div>
+          <div class="card card--horizontal is-md">
+            <div class="card-img">
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-23.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-14.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__title">Veston For Busin1ess</a>
+              <div class="card-body__price">
+                <del>4000</del>
+                <span class="u-color-primary">2000</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item " data-tooltip="Add to Cart">
+                  <button class="button button--circle button--shoping-cart button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card--horizontal is-md">
+            <div class="card-img">
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-13.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-20.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__title">Ligula Ullamcorper Coach</a>
+              <div class="card-body__price">
+                <del>6000</del>
+                <span class="u-color-primary">4500</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item " data-tooltip="Add to Cart">
+                  <button class="button button--circle button--shoping-cart button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-sm-12">
+          <div class="u-bg-white u-pl-30 u-pbt-30 u-pt-30 u-fontsize-20">FEATURED</div>
+          <div class="card card--horizontal is-md">
+            <div class="card-img">
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-21.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-20.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__title">Sapien Euismod</a>
+              <div class="card-body__price">
+                <del>4000</del>
+                <span class="u-color-primary">2000</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item " data-tooltip="Add to Cart">
+                  <button class="button button--circle button--shoping-cart button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card--horizontal is-md">
+            <div class="card-img">
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-07.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-20.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__title">Veston For Business Coach</a>
+              <div class="card-body__price">
+                <del>4000</del>
+                <span class="u-color-primary">2000</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item " data-tooltip="Add to Cart">
+                  <button class="button button--circle button--shoping-cart button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-sm-12">
+          <div class="u-bg-white u-pl-30 u-pbt-30 u-pt-30 u-fontsize-20">TOP RATED</div>
+          <div class="card card--horizontal is-md">
+            <div class="card-img">
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-12.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-20.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__title">Ligula Ullamcorper Coach</a>
+              <div class="card-body__price">
+                <del>4000</del>
+                <span class="u-color-primary">2000</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item " data-tooltip="Add to Cart">
+                  <button class="button button--circle button--shoping-cart button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card--horizontal is-md">
+            <div class="card-img">
+              <div class="card-img__inner is-center" data-tooltip="Quick View">
+                <button class="button button--circle button--search button--primary"></button>
+              </div>
+              <a href="#" class="card-img__img-front" style="background-image: url(images/product-14.jpg);">
+              </a>
+              <a href="#" class="card-img__img-back" style="background-image: url(images/product-20.jpg);">
+              </a>
+            </div>
+            <div class="card-body">
+              <a href="#" class="card-body__title">Ligula Ullamcorper Coach</a>
+              <div class="card-body__price">
+                <del>9000</del>
+                <span class="u-color-primary js-price">2000</span>
+              </div>
+              <div class="card-action">
+                <div class="card-action__item " data-tooltip="Add to Cart">
+                  <button class="button button--circle button--shoping-cart button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="Compare">
+                  <button class="button button--circle button--compare button--grey"></button>
+                </div>
+                <div class="card-action__item " data-tooltip="WishList">
+                  <button class="button button--circle button--heart button--grey"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--xl u-pt-80">
+    <div class="container">
+      <div class="headline--main headline--md headline--dark u-text-center">BLOG UPDATES</div>
+      <div class="headline--sub headline--xs headline--grey u-text-center">Our stories</div>
+      <div class="row u-mt-50">
+        <div class="col-6 col-sm-12">
+          <div class="media">
+            <a href="#" class="media__thumbnail" style="background-image: url(images/blog-01-230x170.jpg);"></a>
+
+            <div class="media-content">
+              <a href="#" class="media__title">Zorka Men Spring/Summer Vacation</a>
+              <a href="#" class="badge badge--around badge--grey u-mbt-8"> March 26, 2015 </a>
+              <a href="#" class="badge badge--around badge--grey"> g5plusacc </a>
+              <a href="#" class="badge badge--around badge--grey"> 0 Comment </a>
+              <p class="media__description">Now, what better way is there to get clothing you’re sure to love than by
+                making it yourself? Did you
+                know that there are clubs you can join that will not only teach you how to make some spiffy duds, but
+                will also allow you to make some friends at the same time?</p>
+              <a href="#" class="media__more">READ MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-sm-12">
+          <div class="media">
+            <a href="#" class="media__thumbnail" style="background-image: url(images/blog-02-230x170.jpg);"></a>
+
+            <div class="media-content">
+              <a href="#" class="media__title">White Vintage Back Pack For Girl</a>
+              <a href="#" class="badge badge--around badge--grey u-mbt-8"> March 26, 2015 </a>
+              <a href="#" class="badge badge--around badge--grey"> g5plusacc </a>
+              <a href="#" class="badge badge--around badge--grey"> 9 Comment </a>
+              <p class="media__description">Swap clothes with your friends. Crazy thought, right? But really. Think
+                about it. Sometimes you’re sick of wearing something while your best friend has been secretly eyeing
+                that top for years, waiting for you to be done with it.</p>
+              <a href="#" class="media__more">READ MORE</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section--bg-img" style="background-image: url(images/bg-mailchimp.jpg);">
+    <div class="headline--main headline--md headline--white">SUBSCRIBE</div>
+    <div class="headline--sub headline--xs headline--grey u-mr-10 u-ml-10 u-text-center">Get the latest news & updates
+      from Zorka</div>
+  </section>
+
+  <section class="section-balance--md">
+    <div class="container">
+      <div class="row is-nowrap ">
+        <div class="col-5">
+          <div class="image-block default" style="background-image: url(images/partner1.png);">
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="image-block default" style="background-image: url(images/partner2.png);">
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="image-block default" style="background-image: url(images/partner3.png);">
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="image-block default" style="background-image: url(images/partner4.png);">
+          </div>
+        </div>
+        <div class="col-5">
+          <div class="image-block default" style="background-image: url(images/partner5.png);">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <hr class="u-line">
+  <section class="section-balance--xl">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 col-sm-12">
+          <div class="box box--secondary box--mid-grey">
+            <span class="box__title">
+              OPENING ALL WEEK <br>
+              <p class="box__sub-title">8AM : 8PM</p>
+            </span>
+            <div class="box__icon">
+              <i class="far fa-clock"></i>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 col-sm-12">
+          <div class="box box--secondary box--mid-grey">
+            <span class="box__title">
+              25% OFF WOMEN T-SHIRT <br>
+              <p class="box__sub-title">On order over 500USD</p>
+            </span>
+            <div class="box__icon">
+              <i class="fas fa-medal"></i>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-4 col-sm-12">
+          <div class="box box--secondary box--mid-grey">
+            <span class="box__title">
+              FREE SHIP ALL ORDER<br>
+              <p class="box__sub-title">Worldwide shipping</p>
+            </span>
+            <div class="box__icon">
+              <i class="fas fa-globe-europe"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+</section>
+<button class="button button--scroll-top" id="js-scroll-top"></button>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="row u-pbt-30">
+      <div class="col-4 col-xs-12 u-mbt-20">
+        <a href="#" class="brand brand--md" style="background-image: url(images/logo.png);"></a>
+        <p class="u-pt-18 u-pbt-28">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in velit a nibh ullamcorper dictum a malesuada
+          ex. Donec sit amet volutpat nunc.
+        </p>
+        <nav>
+          <a href="#" class="footer__link-icon" data-tooltip="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="footer__link-icon" data-tooltip="twitter"><i class="fab fa-twitter"></i></i></a>
+          <a href="#" class="footer__link-icon" data-tooltip="instagram"><i class="fab fa-instagram"></i></i></a>
+          <a href="#" class="footer__link-icon" data-tooltip="vk"><i class="fab fa-vk"></i></i></a>
+          <a href="#" class="footer__link-icon" data-tooltip="behance"><i class="fab fa-behance"></i></i></a>
+        </nav>
+      </div>
+      <div class="col-4 col-xs-12 u-mbt-20">
+        <div class="footer__title">QUICK LINK</div>
+        <div class="row">
+          <div class="col-6">
+            <nav>
+              <a href="#" class="footer__link-text">About Us</a>
+              <a href="#" class="footer__link-text">Deliver</a>
+              <a href="#" class="footer__link-text">Guarantee</a>
+              <a href="#" class="footer__link-text">Member</a>
+              <a href="#" class="footer__link-text">Conditions</a>
+              <a href="#" class="footer__link-text">Manufactures</a>
+            </nav>
+          </div>
+          <div class="col-6">
+            <nav class="footer__nav is-vertical">
+              <a href="#" class="footer__link-text">Our offcie</a>
+              <a href="#" class="footer__link-text">Store</a>
+              <a href="#" class="footer__link-text">Buy Gift card</a>
+              <a href="#" class="footer__link-text">Term</a>
+              <a href="#" class="footer__link-text">Contact Us</a>
+              <a href="#" class="footer__link-text">New brands</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 col-xs-12 u-mbt-20">
+        <div class="footer__title">LOCATION</div>
+        <p>580, Broadway, 1002 - New York NY-U</p>
+        <p class="u-mt-15">Tel: +1 212345321</p>
+        <p class="u-mt-15">Email: info@zorka.com</p>
+      </div>
+    </div>
+    <div class="payment-wrapper">
+      <p>Powered by <a href="#">WordPress</a>. Built on the <a href="#">G5Plus</a>.</p>
+
+      <nav>
+        <a href="" class="footer__link-payment" style="background-image: url(images/visa.png);"></a>
+        <a href="" class="footer__link-payment" style="background-image: url(images/mastercard.png);"></a>
+        <a href="" class="footer__link-payment" style="background-image: url(images/paypal.png);"></a>
+        <a href="" class="footer__link-payment" style="background-image: url(images/twoCO.png);"></a>
+        <a href="" class="footer__link-payment" style="background-image: url(images/american_express.png);"></a>
+        <a href="" class="footer__link-payment" style="background-image: url(images/skrill.png);"></a>
+        <a href="" class="footer__link-payment" style="background-image: url(images/google_wallet.png);"></a>
+        <a href="" class="footer__link-payment" style="background-image: url(images/western_union.png);"></a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

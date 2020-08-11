@@ -1,0 +1,53 @@
+.search-input {
+  width: 100%;
+  padding: 11px 35px 11px 15px;
+  text-transform: none;
+  font-size: $font-size-md;
+  font-weight: $font-weight-normal;
+  border: solid 2px $color-gainsboro;
+  padding-left: 210px;
+  border-radius: 36px;
+}
+
+.modal-search {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -70px;
+  z-index: 999;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  padding: 80px 30px 0px;
+  transition: .5s all ease-in-out;
+
+  &__input {
+    background-color: transparent;
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 20px;
+    border-bottom: solid 1px $color-gainsboro;
+    font-size: 22px;
+    color: $color-white;
+  }
+
+  &__location-close {
+    position: absolute;
+    top: -70px;
+    right: -10px;
+  }
+
+  &__location-search {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  &.is-active {
+    opacity: 0.8;
+    pointer-events: all;
+    top: 0;
+  }
+}

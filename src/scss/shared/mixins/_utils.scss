@@ -1,0 +1,85 @@
+@mixin flexCenter($direction: row, $justify-content: space-between, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  flex-direction: $direction;
+  align-items: $align-items;
+}
+
+@mixin textToRight($color: $color-charm) {
+  transition: 0.5s all;
+
+  &:hover {
+    @content;
+    color: $color;
+    transform: translateX(12px);
+  }
+}
+
+@mixin underlineFromCenter($type, $color: $color-charm) {
+  &:#{$type} {
+    content: "";
+    display: block;
+    border-bottom: 1px solid $color;
+    width: 0;
+    margin: 0 auto;
+    transition: 0.5s all;
+    @content;
+  }
+
+  &:hover {
+    color: $color;
+    transition: 0.5s all;
+
+    &:#{$type} {
+      width: 100%;
+    }
+  }
+}
+
+@mixin locationCenter($horizontal: 50%, $vertical: 50%) {
+  position: absolute;
+  top: $vertical;
+  left: $horizontal;
+  transform: translate(-$horizontal, -$vertical);
+}
+
+@mixin centerX($horizontal: 50%) {
+  position: absolute;
+  left: $horizontal;
+  transform: translateX(-$horizontal);
+}
+
+@mixin centerY($horizontal: 50%) {
+  position: absolute;
+  top: $horizontal;
+  transform: translateY(-$horizontal);
+}
+
+@mixin fontAwesome($type, $code) {
+  &:#{$type} {
+    content: $code;
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands", "pe-icon-7-stroke";
+    font-weight: 900;
+    line-height: 1;
+    display: inline-block;
+    text-rendering: auto;
+    @content;
+  }
+}
+
+@mixin excerpt($lines: 3) {
+  -webkit-line-clamp: $lines;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin bgImage($width, $height) {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: $height;
+  min-width: $width;
+}

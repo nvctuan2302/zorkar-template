@@ -1,0 +1,368 @@
+header {
+  background-color: inherit;
+  transition: 0.6s all ease-in-out;
+
+  @include mediaquery--lg() {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+  }
+
+  .site-top {
+    @include flexCenter(row);
+    position: relative;
+    color: $color-grey;
+
+    @include mediaquery--xs() {
+      flex-direction: column;
+    }
+
+    &__login,
+    &__setting {
+      padding: 10px 0;
+    }
+
+    &__login > a {
+      color: $color-charm;
+    }
+
+    &__setting {
+      @include fontAwesome(after, $icon-arrowdown) {
+        padding-top: 2px;
+        padding-left: 5px;
+      }
+
+      position: relative;
+      cursor: pointer;
+
+      &:hover {
+        .site-top-list {
+          display: block;
+        }
+      }
+    }
+
+    .site-top-list {
+      position: absolute;
+      right: 0;
+      top: 100%;
+      display: none;
+      box-shadow: 0 3px 10px -2px $color-grey;
+      min-width: 180px;
+      background-color: $color-white;
+      z-index: 9;
+      @include mediaquery--xs() {
+        left: 0;
+      }
+
+      &__item {
+        + .site-top-list__item {
+          border-top: 1px solid $color-mid-gray;
+        }
+
+        &:hover {
+          background-color: $color-mid-gray;
+        }
+      }
+
+      &__link {
+        display: block;
+        padding: 10px;
+        color: $color-grey;
+        text-transform: uppercase;
+        word-spacing: 3px;
+        font-size: $font-size-xs;
+      }
+    }
+  }
+
+  .header {
+    &__sub-navbar {
+      border-bottom: 1px solid $color-mid-gray;
+      border-top: 1px solid $color-mid-gray;
+
+      @include mediaquery--sm() {
+        border-bottom: none;
+      }
+
+      .wrap-navbar {
+        @include flexCenter(row);
+
+        padding: 50px 0 40px;
+
+        @include mediaquery--sm() {
+          justify-content: center;
+          padding: 15px;
+        }
+
+        &__expand {
+          position: relative;
+          width: 600px;
+          max-width: 100%;
+
+          .contact-list {
+            @include flexCenter(row);
+            position: absolute;
+            top: -25px;
+            width: 100%;
+            padding: 0 30px;
+
+            @for $i from 1 through length($arr-icon-contact) {
+              &__item:nth-child(#{$i}) {
+                @include fontAwesome(before, nth($arr-icon-contact, $i)) {
+                  padding-right: 5px;
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+
+          .categories {
+            @include centerY();
+
+            width: 201px;
+            border-right: 1px solid $color-gainsboro;
+            z-index: 99;
+
+            &__chosen {
+              @include fontAwesome(after, $icon-arrowleft) {
+                position: absolute;
+                top: 17px;
+                right: 10px;
+                font-size: $font-size-lg;
+                transition: 0.5s all;
+              }
+
+              display: block;
+              cursor: pointer;
+              user-select: none;
+              padding: 11px 10px 11px 25px;
+              font-size: $font-size-lgg;
+              border-top-left-radius: 36px;
+              border-bottom-left-radius: 36px;
+
+              &.rotate90:after {
+                transform: rotate(90deg);
+              }
+            }
+
+            &__result {
+              @include excerpt(1);
+            }
+
+            .categories-list {
+              position: absolute;
+              right: 0;
+              left: 0;
+              background-color: $color-white-smoke;
+              max-height: 0;
+              margin-left: 25px;
+              overflow: auto;
+              transition: 0.5s all ease-in-out;
+
+              &::-webkit-scrollbar {
+                width: 8px;
+              }
+
+              &::-webkit-scrollbar-track {
+                box-shadow: inset 0 3px 10px -2px $color-grey;
+              }
+
+              &::-webkit-scrollbar-thumb {
+                box-shadow: inset 0 3px 10px -2px $color-grey;
+                border-radius: 10px;
+              }
+
+              &.is-active {
+                position: fixed;
+                max-height: 300px;
+                border: 2px solid $color-gainsboro;
+              }
+
+              &__value {
+                cursor: pointer;
+                font-size: 16px;
+                display: block;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                user-select: none;
+                transition: 0.3s all;
+
+                &:hover {
+                  background-color: $color-white-smoke;
+                  color: $color-charm;
+                }
+              }
+            }
+          }
+
+          @include mediaquery--sm() {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__main-navbar {
+      @include flexCenter(row);
+      position: relative;
+
+      .menu-list {
+        display: flex;
+        align-items: center;
+
+        &__item {
+          + .menu-list__item {
+            margin-left: 48px;
+
+            @include mediaquery--md {
+              margin-left: 28px;
+            }
+          }
+
+          &.is-active {
+            .menu-list__link {
+              color: $color-charm;
+
+              &:after {
+                width: 100%;
+              }
+            }
+          }
+
+          &:hover {
+            .dropdown-list,
+            .dropdown-multi-column {
+              opacity: 1;
+              transform: translateY(0);
+              transition-delay: 0.5s;
+              pointer-events: auto;
+            }
+          }
+        }
+
+        &__link {
+          @include underlineFromCenter(after, $color-charm);
+          @include fontAwesome(before, $icon-arrowdown) {
+            position: absolute;
+            right: 0;
+            color: $color-grey;
+            padding-top: 2px;
+          }
+
+          position: relative;
+          display: inline-block;
+          color: $color-cinder;
+          font-size: $font-size-sm;
+          padding: 20px 15px 20px 0px;
+          text-transform: uppercase;
+        }
+      }
+
+      .social-list {
+        display: flex;
+
+        &__item {
+          @for $i from 1 through length($arr-icon-sociallist) {
+            &:nth-child(#{$i}) {
+              .social-list__link {
+                @include fontAwesome(before, nth($arr-icon-sociallist, $i)) {
+                  font-weight: 400;
+                  color: $color-light-gray;
+                }
+
+                &:hover:before {
+                  transition: 0.5s all;
+                  color: $color-cinder;
+                }
+              }
+            }
+          }
+
+          + .social-list__item {
+            margin-left: 15px;
+          }
+        }
+      }
+
+      @include mediaquery--sm() {
+        display: none;
+      }
+    }
+
+    &__main-navbar-mobie {
+      display: none;
+      background-color: $color-black;
+      width: 100%;
+      margin-bottom: 15px;
+
+      .menu-toggle {
+        @include flexCenter(row);
+        padding: 10px 15px;
+      }
+
+      .menu-mobie-list {
+        max-height: 0;
+        overflow: hidden;
+        background-color: $color-nero;
+        padding: 0 15px;
+        transition: 0.5s ease-in-out;
+
+        &__item {
+          position: relative;
+
+          &:not(:last-child) {
+            > .menu-mobie-list__link {
+              border-bottom: 1px solid $color-night-rider;
+            }
+          }
+
+          &.has-sub {
+            @include fontAwesome(after, $icon-arrowleft) {
+              position: absolute;
+              top: 15px;
+              right: 1px;
+              color: $color-grey;
+              transition: 0.5s all;
+            }
+
+            &.rotate90:after {
+              transform: rotate(90deg);
+            }
+          }
+        }
+
+        &__link {
+          position: relative;
+          display: block;
+          padding: 10px 0;
+          color: $color-white;
+        }
+      }
+
+      .menu-mobie-list-lv2 {
+        padding-left: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+
+        &__item {
+          border-bottom: 1px solid $color-night-rider;
+        }
+
+        &__link {
+          display: block;
+          padding: 10px 0;
+          color: $color-white;
+          font-size: $font-size-sm;
+        }
+      }
+
+      @include mediaquery--sm() {
+        display: block;
+      }
+    }
+  }
+}

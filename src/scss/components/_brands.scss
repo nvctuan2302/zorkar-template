@@ -1,0 +1,25 @@
+.brand {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  &--sm {
+    width: 73px;
+    height: 35px;
+  }
+
+  &--md {
+    width: 92px;
+    height: 45px;
+  }
+
+
+  &--hiden {
+    display: none;
+
+    &.show {
+      display: block;
+    }
+  }
+}

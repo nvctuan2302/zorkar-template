@@ -1,0 +1,75 @@
+.badge {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  white-space: nowrap;
+  transition: 0.5s all ease-in-out;
+
+  &--xl {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  &--arrow {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    color: $color-white;
+    padding: 5px 8px;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bold;
+    transform: translateX(50%);
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      right: 50%;
+      background-color: inherit;
+      width: 5px;
+      height: 5px;
+      transform: translate(50%, -50%) rotate(45deg);
+    }
+  }
+
+  &--circle {
+    color: $color-white;
+    border-radius: 50%;
+
+    &.is-sm {
+      font-size: $font-size-sm;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+    }
+  }
+
+  &--around {
+    padding: 6px 10px;
+    border-radius: 36px;
+  }
+
+  &--primary {
+    background-color: $color-charm;
+  }
+
+  &--blue {
+    background-color: $color-regal-blue;
+  }
+
+  &--red {
+    background-color: $color-persian-red;
+  }
+
+  &--grey {
+    background-color: $color-mid-gray;
+  }
+}
+
+a[class*="badge-"] {
+  &:hover {
+    color: $color-white;
+    background-color: $color-charm;
+  }
+}

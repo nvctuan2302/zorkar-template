@@ -1,0 +1,46 @@
+.tab {
+  @include flexCenter(row, center, center);
+  margin-top: 50px;
+  margin-bottom: 30px;
+
+  @include mediaquery--xxs() {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    @include underlineFromCenter(after);
+    cursor: pointer;
+    font-weight: $font-weight-dark-bold;
+    text-transform: uppercase;
+    line-height: 2;
+    color: $color-light-grey;
+    font-size: $font-size-md;
+    letter-spacing: 1px;
+
+    + .tab__item {
+      margin-left: 50px;
+
+      @include mediaquery--xxs() {
+        margin-left: 0;
+      }
+    }
+
+    &.is-active {
+      color: $color-charm;
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}

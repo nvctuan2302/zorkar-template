@@ -1,0 +1,158 @@
+.button {
+  display: inline-block;
+  line-height: 1;
+  cursor: pointer;
+  background-color: inherit;
+  text-align: center;
+  user-select: none;
+  transition: 0.5s all;
+
+  &--round {
+    border-radius: 36px;
+    padding: 11px 25px;
+    font-size: $font-size-sm;
+    white-space: nowrap;
+  }
+
+  &--circle {
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    line-height: 36px;
+  }
+
+  &--search {
+    @include fontAwesome(after, $icon-search) {
+    }
+  }
+
+  &--heart {
+    @include fontAwesome(after, "\f004") {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &--compare {
+    @include fontAwesome(after, "\f022") {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &--shoping-cart {
+    @include fontAwesome(after,$icon-shoping-cart) {
+      font-size: $font-size-xs;
+    }
+  }
+
+  &--hamburger {
+    $bg-hamburger: $color-white;
+    position: relative;
+    font-size: $font-size-lg;
+
+    .line {
+      @include centerY();
+
+      background-color: $bg-hamburger;
+      width: 20px;
+      height: 2px;
+
+      &:after,
+      &:before {
+        content: "";
+        background-color: $bg-hamburger;
+        width: 20px;
+        height: 2px;
+        display: block;
+        transition: 0.5s all;
+      }
+
+      &:before {
+        transform: translateY(-8px);
+      }
+
+      &:after {
+        transform: translateY(6px);
+      }
+    }
+
+    &.open {
+      .line:before {
+        transform: translateY(0px) rotate(45deg);
+        background-color: $bg-hamburger;
+      }
+
+      .line {
+        background-color: transparent;
+      }
+      .line:after {
+        transform: translateY(-2px) rotate(-45deg);
+        background-color: $bg-hamburger;
+      }
+    }
+  }
+
+  &--close {
+    @include fontAwesome(after, $icon-close) {
+      font-size: $font-size-xxl;
+    }
+  }
+
+  &--primary {
+    background-color: $color-charm;
+    color: $color-white;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-cinder;
+    border: 1px solid $color-dark-gray;
+
+    &:hover {
+      background-color: $color-charm;
+      color: $color-white;
+      border: 1px solid $color-charm;
+    }
+  }
+
+  &--grey {
+    background-color: $color-whisper;
+    color: $color-nobel;
+  }
+
+  &--right {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &--scroll-top {
+    @include fontAwesome(after, $icon-arrowup) {
+      font-size: $font-size-xl;
+      color: $color-white;
+    }
+
+    height: 56px;
+    width: 56px;
+    background-color: $color-charm;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 5px 6px rgba(0,0,0,0.2);
+    opacity:0;
+    transition: opacity 0.4s linear;
+    pointer-events: none;
+
+    @include  mediaquery--not-lg() {
+      bottom: 20px;
+      right: 20px;
+    }
+    &.is-visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
